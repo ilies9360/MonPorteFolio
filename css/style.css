@@ -1,0 +1,86 @@
+@import url("reset.css");
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-image: url("banner.jpg");
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10rem;
+    padding: 20px 0;
+}
+
+.banner {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+.competences-list, .projects-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.competences-list li, .projects-list li {
+    background: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    .competences-list, .projects-list {
+        flex-direction: column;
+    }
+
+    .competences-list li, .projects-list li {
+        flex: 1 1 100%;
+    }
+}
