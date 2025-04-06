@@ -1,0 +1,147 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    font-family: "Hubot Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+h1{
+    font-size: 5rem;
+    font-weight: bold;
+}   
+  
+html, body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;  
+    border-radius: 10%;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    background: url('../asset/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#Home img{
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+    border-radius: 10%;
+
+    max-height: 35rem;
+    max-width: 35rem;
+}
+
+main {
+    flex: 1; /* Prend tout l'espace dispo */
+}
+
+header {
+    position: fixed;
+    border-radius: 5%;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+#img-container{
+    display: flex;
+    justify-content: center;  /* Centrer horizontalement les images */
+    align-items: center;      /* Centrer verticalement les images (si nécessaire) */
+    flex-wrap: wrap;          /* Permet aux images de se réorganiser sur plusieurs lignes si l'espace est petit */
+    padding: 0;
+    list-style-type: none;    /* Supprime les puces de liste */
+    width: 100%;              /* Assure que le conteneur prend toute la largeur disponible */
+}
+.skill-img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);  
+    transition: transform 0.3s ease;  
+}
+
+.skill-img:hover {
+    transform: scale(1.1);   
+    background-color: #93ff95;
+}
+
+
+.projet {
+    background: white;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.projet:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 1em;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .projet {
+        width: 95%;
+    }
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+/* Animation de fondu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
