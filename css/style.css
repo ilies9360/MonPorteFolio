@@ -6,7 +6,6 @@
     font-style: normal;
 }
 h1{
-<<<<<<< HEAD
     font-size: 5rem;
     font-weight: bold;
 }   
@@ -22,18 +21,6 @@ html, body {
     margin-left: 5%;
     margin-right: 5%;
     padding: 0;
-=======
-    font-size: 7.5rem;
-    font-weight: bold;
-}
-  
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
->>>>>>> 90532100e0bfac9e2bf11477b84d712902b04fad
 }
 body {
     font-family: Arial, sans-serif;
@@ -44,7 +31,6 @@ body {
     background: url('../asset/background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
-<<<<<<< HEAD
 
 #Home img{
     display: block;
@@ -56,19 +42,14 @@ body {
     max-width: 35rem;
 }
 
-=======
->>>>>>> 90532100e0bfac9e2bf11477b84d712902b04fad
 main {
     flex: 1; /* Prend tout l'espace dispo */
 }
 
 header {
-<<<<<<< HEAD
     position: fixed;
     border-radius: 5%;
     width: 100%;
-=======
->>>>>>> 90532100e0bfac9e2bf11477b84d712902b04fad
     background: #333;
     color: white;
     padding: 1em;
@@ -94,7 +75,6 @@ section {
     padding: 20px;
 }
 
-<<<<<<< HEAD
 #img-container{
     display: flex;
     justify-content: center;  /* Centrer horizontalement les images */
@@ -119,8 +99,6 @@ section {
 }
 
 
-=======
->>>>>>> 90532100e0bfac9e2bf11477b84d712902b04fad
 .projet {
     background: white;
     margin: 10px auto;
@@ -136,10 +114,7 @@ section {
 }
 
 footer {
-<<<<<<< HEAD
     width: 100%;
-=======
->>>>>>> 90532100e0bfac9e2bf11477b84d712902b04fad
     background: #333;
     color: white;
     padding: 1em;
