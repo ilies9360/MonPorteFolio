@@ -91,18 +91,28 @@ const cur   = document.getElementById('cursor');
 const trail = document.getElementById('cursor-trail');
 let mx = 0, my = 0, tx = 0, ty = 0;
 
-document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cur.style.left = mx + 'px';
-  cur.style.top  = my + 'px';
-});
-(function animTrail() {
-  tx += (mx - tx) * 0.11;
-  ty += (my - ty) * 0.11;
-  trail.style.left = tx + 'px';
-  trail.style.top  = ty + 'px';
-  requestAnimationFrame(animTrail);
-})();
+const isMobile = window.matchMedia("(max-width: 1024px)").matches || 
+                 ('ontouchstart' in window) || 
+                 (navigator.maxTouchPoints > 0);
+
+if (!isMobile) {
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cur.style.left = mx + 'px';
+      cur.style.top  = my + 'px';
+    });
+
+    (function animTrail() {
+      tx += (mx - tx) * 0.11;
+      ty += (my - ty) * 0.11;
+      trail.style.left = tx + 'px';
+      trail.style.top  = ty + 'px';
+      requestAnimationFrame(animTrail);
+    })();
+} else {
+    if(cur) cur.style.display = 'none';
+    if(trail) trail.style.display = 'none';
+}
 
 
 // ═══════════════════════════════════════════════════════
