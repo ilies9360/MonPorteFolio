@@ -166,3 +166,38 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.08 });
 
 document.querySelectorAll('.reveal').forEach(r => io.observe(r));
+
+
+// ═══════════════════════════════════════════════════════
+// SCROLL REVEAL
+// ═══════════════════════════════════════════════════════
+// Initialisation avec ta clé publique
+(function() {
+    emailjs.init("-_m-XBD3vSaoWgksg"); 
+})();
+
+const contactForm = document.getElementById('contact-form');
+const submitBtn = document.getElementById('submit-btn');
+
+contactForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+
+    // Changement d'état du bouton
+    submitBtn.innerText = "Envoi en cours...";
+    submitBtn.disabled = true;
+
+    // Envoi des données du formulaire
+    // 'this' fait référence au formulaire lui-même
+    emailjs.sendForm('service_0ty6ged', 'template_fgfv61a', this)
+        .then(function() {
+            alert('Succès ! Votre message a été transmis.');
+            contactForm.reset(); // Vide les champs
+        }, function(error) {
+            alert('Oups... Erreur : ' + JSON.stringify(error));
+        })
+        .finally(function() {
+            // Remise à zéro du bouton
+            submitBtn.innerText = "Envoyer";
+            submitBtn.disabled = false;
+        });
+});

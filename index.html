@@ -50,7 +50,7 @@
       <p class="h-role"><span>Développeur Full-Stack</span> · 2ème année SLAM — ITIC Paris</p>
       <p class="h-desc">
         Passionné par le développement web et logiciel. Je construis des applications
-        avec Laravel, React et Java — toujours curieux d'explorer de nouvelles technos.
+        avec Laravel et Java — toujours curieux d'explorer de nouvelles technos.
       </p>
       <div class="h-cta">
         <a href="#projets" class="btn btn-p">↓ Mes projets</a>
@@ -68,7 +68,7 @@
   <!-- ════ CV ════ -->
   <section id="cv">
     <div class="si">
-      <p class="ey">Curriculum Vitae</p>
+      <p class="ey">C.V</p>
       <h2 class="st">Parcours &amp; <span>Compétences</span></h2>
       <div class="cv-g">
         <div>
@@ -81,7 +81,7 @@
           <div class="cv-it reveal">
             <p class="cv-dt">2022 — 2023</p>
             <p class="cv-nm">Baccalauréat Général</p>
-            <p class="cv-sb">Lycée [Établissement]</p>
+            <p class="cv-sb">Lycée [Jean-Zay Aulnay-sous-bois]</p>
           </div>
           <br>
           <p class="cv-ch">// Expériences</p>
@@ -328,12 +328,7 @@
         <div>
           <p class="v-intro-t">// Sources consultées régulièrement</p>
           <ul class="v-method">
-            <li>Laravel News &amp; Laracasts Blog</li>
-            <li>Dev.to &amp; Medium — articles développeurs</li>
-            <li>CERT-FR — alertes cybersécurité ANSSI</li>
-            <li>Reddit : r/webdev, r/laravel, r/java</li>
-            <li>GitHub Trending — open source du moment</li>
-            <li>YouTube : Fireship, Grafikart, Traversy Media</li>
+            <li>Laravel News </li>
             <li>Newsletters : JavaScript Weekly, Laravel News</li>
           </ul>
         </div>
@@ -365,35 +360,6 @@
             <li><a href="#">Baeldung — JDBC Guide</a></li>
             <li><a href="#">Stack Overflow</a></li>
           </ul>
-        </div>
-        <div class="vt-it reveal">
-          <div class="vt-dot"></div>
-          <p class="vt-date">Janvier 2025</p>
-          <p class="vt-cat">// Cybersécurité</p>
-          <h3 class="vt-title">OWASP Top 10 — Injections SQL &amp; XSS</h3>
-          <p class="vt-body">Revue du classement OWASP des failles web les plus critiques. Focus sur les injections SQL et les XSS. Application dans SkyStorm.</p>
-          <p class="vt-src-lbl">Sources</p>
-          <ul class="vt-srcs">
-            <li><a href="#">OWASP.org</a></li>
-            <li><a href="#">CERT-FR Bulletin</a></li>
-            <li><a href="#">PortSwigger Web Academy</a></li>
-          </ul>
-        </div>
-        <div class="vt-it reveal">
-          <div class="vt-dot"></div>
-          <p class="vt-date">Décembre 2024</p>
-          <p class="vt-cat">// Base de données</p>
-          <h3 class="vt-title">MySQL — Optimisation des requêtes</h3>
-          <p class="vt-body">Techniques d'optimisation MySQL : index composites, EXPLAIN, éviter les N+1 avec Eloquent. Mis en pratique lors de la mise à jour du site Net+ en stage.</p>
-          <p class="vt-src-lbl">Sources</p>
-          <ul class="vt-srcs">
-            <li><a href="#">MySQL 8.0 Reference</a></li>
-            <li><a href="#">Planetscale Blog</a></li>
-            <li><a href="#">phpMyAdmin Docs</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </section>
   <hr class="dv">
 
@@ -466,6 +432,25 @@
     </div>
   </section>
 
+<!-- ════ MAIL ════ -->
+    <section id="contact">
+    <p class="ey">Documentation &amp; Code</p>
+      <h2 class="st">Contactez <span>Moi</span></h2>
+    <form id="contact-form">
+      <div class="form-group" id="name-group">
+          <input type="text" name="from_name" id="from_name" placeholder="Votre Nom" required>
+      </div>
+      <div class="form-group" id="email-group">
+          <input type="email" name="reply_to" id="reply_to" placeholder="Votre Email" required>
+      </div>
+      <div class="form-group" id="massage-group">
+          <textarea name="message" id="message" placeholder="Votre message" required></textarea>
+      </div>
+      <button type="submit" id="submit-btn">Envoyer</button>
+  </form>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</section>  
   <!-- ════ FOOTER ════ -->
   <footer>
     <div class="ft-i">
