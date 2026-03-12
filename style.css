@@ -97,7 +97,7 @@ body::after {
   display: flex; flex-direction: column; overflow: hidden; max-height: 0;
   transition: max-height .4s cubic-bezier(.77,0,.18,1);
 }
-#mobile-menu.open { max-height: 320px; }
+#mobile-menu.open { max-height: 400px; }
 #mobile-menu a {
   font-family: var(--mono); font-size: .72rem; letter-spacing: .1em;
   text-transform: uppercase; text-decoration: none; color: var(--grey);
